@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>config</class>
+ <widget class="QWidget" name="config">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="2">
+    <widget class="QLabel" name="label">
+     <property name="whatsThis">
+      <string>The numbers seperated by space means the time interval in day between the first day and the date of these review events.</string>
+     </property>
+     <property name="text">
+      <string>Repeat days:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPlainTextEdit" name="kcfg_days">
+     <property name="toolTip">
+      <string>Days seperated by space</string>
+     </property>
+     <property name="whatsThis">
+      <string>The numbers seperated by space means the time interval in day between the first day and the date of these review events.</string>
+     </property>
+     <property name="plainText">
+      <string>1 2 4 7 15 30 60 100</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

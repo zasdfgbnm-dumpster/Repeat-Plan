@@ -1,0 +1,8 @@
+To use this widget, you have to ensure your konsolekalendar installed
+and configured.  For most people the konsolekalendar tool is already
+installed with kde.  You can simply test whether your konsolekalendar
+is well configured by by running the command "konsolekalendar".  If it
+displays your events in your calendar correctly, that means your
+kolsoleklendar has already been configured well.  If not, go to
+"System Settings"->"Personal Information"->"KDE Resources"->"Calendar"
+and then add the resource(s) you want here.

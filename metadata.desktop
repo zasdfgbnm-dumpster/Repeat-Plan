@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=Repeat Plan
+Comment=This widget adds events to calendar to remind you repeat something.  The default setting of repeat days is from Ebbinghaus forgeting curve.  So,you can use this widget to help your learn new words. 
+Icon=view-calendar
+
+Type=Service 
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=qml/main.qml
+X-Plasma-DefaultSize=250,300
+X-Plasma-RequiredExtensions=LaunchApp
+ 
+X-KDE-PluginInfo-Author=Gao Xiang
+X-KDE-PluginInfo-Email=qasdfgtyuiop@gmail.com
+X-KDE-PluginInfo-Name=add events to calendar to remind your repeat something. 
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

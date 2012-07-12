@@ -1,3 +1,12 @@
+Author: Gao Xiang
+Email: qasdfgtyuiop@gmail.com
+Homepage: https://github.com/zasdfgbnm/Repeat-Plan 
+License: GPLv3
+
+This widget adds events to calendar to remind you repeat something.  
+The default setting of repeat days is from Ebbinghaus forgeting curve.
+So,you can use this widget to help your learn new words. 
+
 To use this widget, you have to ensure your konsolekalendar installed
 and configured.  For most people the konsolekalendar tool is already
 installed with kde.  You can simply test whether your konsolekalendar
@@ -6,3 +15,17 @@ displays your events in your calendar correctly, that means your
 kolsoleklendar has already been configured well.  If not, go to
 "System Settings"->"Personal Information"->"KDE Resources"->"Calendar"
 and then add the resource(s) you want here.
+
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

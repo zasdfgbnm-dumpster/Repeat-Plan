@@ -1,5 +1,5 @@
 //convert date to string with format YYYY-MM-DD
-function dateToString(date){
+function dateToString(date) {
     var ret = "";
     ret += date.getFullYear();
     ret += "-";
@@ -11,8 +11,8 @@ function dateToString(date){
     return ret;
 }
 
-//get konsolekalendar command line
-function getCommandLine(date,summary,description){
+//get konsolekalendar command line arguments
+function getCommandLineArgs(date,summary,description) {
     return new Array("--add",
 		     "--allow-gui",
 		     "--date",dateToString(date),
@@ -21,22 +21,26 @@ function getCommandLine(date,summary,description){
 		    );
 }
 
+//get the date n days after date
+function nDaysAfter(date,n) {
+	var ret = new Date(date);
+	ret.setDate(ret.getDate()+Number(n));
+	return ret;
+}
+
 function addToCalendar(title,description) {
-    var days_string = String(plasmoid.readConfig("days"));
-    var days_string_array = days_string.split(" ");
-    var n = days_string_array.length;
+    var exec = "konsolekalendar";
+    //exec = "echo"; //debug
+    var days = String(plasmoid.readConfig("days")).split(" ");
     //Here we get the current date once and make a copy everytime we
     //use it in order to avoid mistakes when a new day come before
     //the returning of this function;
     var today = new Date();
-    for( i in days_string_array ){
-	var day = today.getDate() + Number(days_string_array[i]);
-	var date_of_event = new Date(today);
-	date_of_event.setDate(day);
-	var cmd_args = getCommandLine(date_of_event,summaryTextField.text
-				     ,descriptionTextArea.text);
-	if(!plasmoid.runCommand("konsolekalendar",cmd_args))
-	    return false;
+    for( i in days ){
+	var cmd_args = getCommandLineArgs(nDaysAfter(today,days[i]),
+					  summaryTextField.text,
+					  descriptionTextArea.text);
+	if(!plasmoid.runCommand(exec,cmd_args)) return false;
     }
     return true;
 } 
